@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <title>VideoDrop — Video Downloader</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="VideoDrop home"><span class="brand-icon">▶</span> VideoDrop</a>
+    <a class="github-link" href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow"><span class="dot"></span> SIMPLE · FAST · FREE</div>
+      <h1>আপনার ভিডিও,<br><span>আপনার ডিভাইসে।</span></h1>
+      <p class="subtitle">ভিডিওর সরাসরি URL দিন, তারপর ডাউনলোড করুন। নিজের বা ডাউনলোডের অনুমতি আছে—এমন ভিডিওর জন্য ব্যবহার করুন।</p>
+
+      <form id="download-form" class="download-card">
+        <label for="video-url">ভিডিও URL</label>
+        <div class="input-row">
+          <span class="link-icon" aria-hidden="true">↗</span>
+          <input id="video-url" type="url" placeholder="https://example.com/video.mp4" required>
+          <button type="submit" id="download-btn"><span>↓</span> Download</button>
+        </div>
+        <div class="hint">সরাসরি MP4, WebM বা অন্য ভিডিও ফাইলের লিংক দিন</div>
+        <div id="message" class="message" role="status" aria-live="polite"></div>
+      </form>
+
+      <div class="trust-row">
+        <span>✓ কোনো অ্যাকাউন্ট লাগবে না</span>
+        <span>✓ ব্রাউজারেই কাজ করে</span>
+        <span>✓ মোবাইল-ফ্রেন্ডলি</span>
+      </div>
+    </section>
+
+    <section class="how">
+      <h2>কীভাবে ব্যবহার করবেন?</h2>
+      <div class="steps">
+        <article class="step"><div class="step-num">01</div><h3>লিংক কপি করুন</h3><p>ভিডিও ফাইলের সরাসরি URL কপি করুন।</p></article>
+        <article class="step"><div class="step-num">02</div><h3>এখানে পেস্ট করুন</h3><p>উপরের ইনপুটে URL পেস্ট করে Download চাপুন।</p></article>
+        <article class="step"><div class="step-num">03</div><h3>সেভ করুন</h3><p>ব্রাউজার ডাউনলোড সমর্থন করলে ফাইল সেভ হবে।</p></article>
+      </div>
+    </section>
+
+    <aside class="note"><strong>মনে রাখবেন:</strong> এই GitHub Pages সংস্করণটি সরাসরি ভিডিও ফাইলের URL ডাউনলোড করতে পারে। YouTube, Facebook বা TikTok-এর পেজ URL সরাসরি ডাউনলোড করার জন্য সার্ভার/API লাগে এবং প্ল্যাটফর্মের শর্ত ও কপিরাইট মানতে হবে।</aside>
+  </main>
+
+  <footer><a class="brand small" href="#"><span class="brand-icon">▶</span> VideoDrop</a><span>শুধু অনুমতিপ্রাপ্ত কনটেন্ট ডাউনলোড করুন।</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
